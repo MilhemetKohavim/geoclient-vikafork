@@ -67,10 +67,10 @@ jobs:
     # If this step fails, then you should remove it and run the build manually (see below)
     #- name: Autobuild
     #  uses: github/codeql-action/autobuild@v3
-    - name: Build Java
-      run: |
-        make bootstrap
-        make release
+   #- name: Build Java
+   #   run: |
+   #     make bootstrap
+   #     make release
 
     # ℹ️ Command-line programs to run using the OS shell.
     # 📚 See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun
@@ -79,10 +79,10 @@ jobs:
     #   modify them (or add more) to build your code if your project, please refer to the EXAMPLE below for guidance.
 
     #- run: |
-    #- name: Display the path
-    #  run: echo %PATH% + " VIKS!!!!  Run, Build Application using script"
+    - name: Build Java
+      run: ./geoclient-vikafork/buildSrc/build.gradle
     #echo "VIKS!!!!  Run, Build Application using script"
-    #     ./location_of_script_within_repo/buildscript.sh
+        
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
