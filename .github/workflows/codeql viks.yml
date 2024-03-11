@@ -80,7 +80,7 @@ jobs:
 
     #- run: |
     - name: Build Java
-      run: ./geoclient-vikafork/buildSrc/build.gradle
+      run: .geoclient-vikafork/blob/main/buildSrc/build.gradle
     #echo "VIKS!!!!  Run, Build Application using script"
         
 
